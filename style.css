@@ -1,0 +1,215 @@
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*cores:
+    #001e52
+    #00215a
+    #0d306b
+    #1a3f7d
+    #274d8e
+    #345c9f
+    #7c9acf
+    #fff
+*/
+
+body{
+    margin: 0vh;
+    font-family: 'pixelify sans', sans-serif;
+    background-image: url('assets/vinyl_bg.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+/* cabeçalho */
+
+header{
+    width: 100%;
+    height: 50vh; 
+    display: flex;
+}
+
+#superior_fixo{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background-color: #00215a50;
+    align-items: center;
+    z-index: +1;
+}
+
+#conteudo_header{
+    display: flex;
+    width: 100vw;
+    height: 55vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteudo_header h1{
+    margin-top: 16vh;
+    font-size: 8vh;
+    color: #fff ;
+    font-size: 5vw;
+}
+
+img{
+    width: 28vh;
+    height: 16vh;
+    margin: 1vh;
+    margin-left: 8vh;
+}
+
+nav{
+    width: 80%;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    gap: 8vh;
+    justify-content: end;
+}
+
+ul a{
+    display: flex;
+    list-style: none;
+    width: 12vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+li{
+    background-color: #0d306b30;
+    display: flex;
+    list-style: none;
+    width: 10vw;
+    height: 14.5vh;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 3.6vh;
+    color: #fff;
+}
+
+/* seção principal */
+main{
+    width: 100%;
+    height: 100vh;
+}
+
+/* home */
+
+#home {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#icones_container_tras {
+    background-color: #345c9f;
+    width: 90vw;
+    height: 43vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5vh;
+}
+
+#icones_container_frente {
+    background-color: #001e52;
+    width: 90vw;
+    height: 43vh;
+    position: absolute;
+    left: 6vh; 
+    top: 6vh; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#icones_container_frente h1 {
+    color: #7c9acf;
+    font-size: 4vh;
+    margin: 0;
+}
+
+#artistas_container {
+    display: flex;
+    gap: 15px;
+    margin: 1vh;
+}
+
+.icones_back {
+    width: 15.9vw;
+    height: 17.9vw;
+    background-color: #7c9acf;
+    align-items: center;
+    justify-content: center;
+}
+
+.icones_back img {
+    width: 98%;
+    height: 98%;
+    margin-right: 8vh;
+}
+
+.icones_back p{
+    font-size: 3.6vh;
+    text-align: center;
+    color: #001e52;
+    font-weight: 700;
+}
+
+.icones_front {
+    width: 76%;
+    height: 66%;
+    margin-top: 1vh;
+    margin-left: 3.9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* seção de musicas */
+
+#musicas{
+    background-color: aliceblue;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+}
+
+.musica_container{
+    background-color: #7c9acf;
+    width: 25%;
+    height: auto;
+    display: grid;
+}
+
+.musica_icones{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    background-color: #001e52;
+}
+
+.musica_icones img{
+    margin: 2vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+.musica_icones p{
+    color: #fff;
+    font-size: 3vh;
+}
