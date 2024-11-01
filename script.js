@@ -1,6 +1,6 @@
 //banner rotativo:
 
-    //pega a classe do html
+    //pega a classe .banner_imagens
     let imagens = document.querySelector('.banner_imagens');
 
 
@@ -31,19 +31,17 @@
     setaBannerDireita.addEventListener('click', bannerRotativo);
     setaBannerEsquerda.addEventListener('click', bannerRotativo);
 
-//play músicas
+//player de músicas
 
-    //define as variaveis
-    let playMusica = document.getElementByClassName('play_button');
+    //pega id #audioPlayer
+    const audioPlayer = document.getElementById("audioPlayer");
 
-    //função para tocar musica
-    function tocarMusica(){
+    //funções tocar e pausar
 
+    function tocarMusica() {
+        audioPlayer.play();
     }
-    
-    playMusica.addEventListener('click', tocarMusica);
 
-
-
-
-
+    function pausarMusica() {
+        audioPlayer.pause();
+    }
