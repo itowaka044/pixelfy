@@ -45,3 +45,44 @@
     function pausarMusica() {
         audioPlayer.pause();
     }
+
+// play/pause header
+
+    let playHeader = document.getElementById('play_header');
+
+    //ao clicar no botão, chama função
+    
+    playHeader.addEventListener('click', clicarBotao);
+
+    //array com indice 0 para o play e 1 para o pause
+
+    arrayPlay = ["> Play", "|| Pause"];
+
+    let j = 0;
+
+    //função clicar botão
+
+    function clicarBotao(){
+
+        //mostra na tela o texto conforme o indice da variavel arrayPlay
+
+        playHeader = document.getElementById('play_header').innerHTML = arrayPlay[j];
+
+        //adiciona mais um ao indice
+
+        j++;
+
+        //condiçoes, se 0 == play, se 1 == pause, se 2 == fim do array e retorna ao inicio com j = 0;
+
+        if(j == 0){
+            tocarMusica();
+        }
+
+        if(j == 1){
+            pausarMusica();
+        }
+
+        if (j == 2){
+            j = 0;
+        }
+    }
