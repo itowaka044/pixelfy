@@ -58,7 +58,7 @@
 
     arrayPlay = ["> Play", "|| Pause"];
 
-    let j = 0;
+    let j = 1;
 
     //função clicar botão
 
@@ -67,8 +67,6 @@
         //mostra na tela o texto conforme o indice da variavel arrayPlay
 
         playHeader = document.getElementById('play_header').innerHTML = arrayPlay[j];
-
-        //adiciona mais um ao indice
 
         j++;
 
@@ -86,3 +84,4 @@
             j = 0;
         }
     }
+
